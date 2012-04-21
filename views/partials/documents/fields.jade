@@ -1,0 +1,15 @@
+div
+  label Title:
+  input(name='document[title]', value=d.title || '')
+div
+  label Description:
+  div
+    textarea(name='document[description]')
+      =d.description || ''
+div
+  label Image Name:
+  div
+    textarea(name='document[image]')
+      =d.image || ''
+div
+  input(type='submit', value='Save')

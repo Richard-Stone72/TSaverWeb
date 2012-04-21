@@ -1,7 +1,14 @@
-!!!
+!!! 5
 html
   head
-    title= title
+    title= 'TSaver Web'
     link(rel='stylesheet', href='/stylesheets/style.css')
+	block scripts
+		script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js')
   body
     block content
+		h1 Hello
+    block foot
+      #footer
+        p some footer content
+    script(type='text/javascript', src='/javascripts/application.js')
